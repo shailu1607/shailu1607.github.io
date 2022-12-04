@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/ski.png");
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: rgb(54, 54, 54);
+    font-weight: bolder;
+}
+
+.nav-area li.active a{
+    background: #fff;
+    color: rgb(3, 3, 3);
+}
+
+.logo img{
+    width: 50px;
+    float: left;
+    height: auto;
+    padding: 10px 20px;
+}
+
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.welcome-text h1 a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.about{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin: 15% 30%;
+    text-align: center;
+}
+
+.about h2{
+    text-align: center;
+    color: #fff;
+}
+
+.about dl{
+    text-align: center;
+    color: #fff;
+    padding: 1cm;
+}
+
+.about dd {
+    display: list-item;
+    list-style-type: "";
+    padding-inline-start: 1ch;
+}
+
+.about1{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin: 35% 30%;
+    text-align: center;
+}
+.about1 h2{
+    text-align: center;
+    color: #fff;
+}
+
+.about1 dl{
+    text-align: center;
+    color: #fff;
+    padding: 1cm;
+}
+
+.about1 dd {
+    display: list-item;
+    list-style-type: "";
+    padding-inline-start: 1ch;
+  }

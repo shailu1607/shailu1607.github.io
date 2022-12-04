@@ -100,8 +100,8 @@ body{
 .about1{
     position: absolute;
     width: 600px;
-    height: 600px;
-    margin: 45% 30%;
+    height: auto;
+    margin: 55% 30%;
     text-align: center;
 }
 .about1 h2{

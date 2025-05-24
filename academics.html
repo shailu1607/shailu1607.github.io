@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style/aca.css">
-    </head>
-    <body>
-        <nav>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="style/images/logo.png" alt="">
-                    
-                </div>
-                <ul class="nav-area">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="#">Academics</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certification.html">Certifications</a></li>
-                    <li><a href="general.html">General info</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Profile</title>
+      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style/aca.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+            <div class="profile">
+                <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
+                <h2>Shailaja Vasu</h2>
             </div>
+            <ul class="nav-list">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="projects.html">Experience</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="certification.html">Certifications</a></li>
+                <li><a href="skills.html">Additional Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-            
-            <div class="about">
-                <h2>SCHOOLING</h2>
-                <dl>
-                    <dt>SECONDARY</dt>
-                    <dd>Year of completion: 2017</dd>
-                    <dd>TAMIL NADU STATE BOARD</dd>
-                    <dd>PERCENTAGE : 95.4%</dd>
-                    <dd>      </dd>
-                    <dt>HIGHER SECONDARY</dt>
-                    <dd>Year of completion: 2019</dd>
-                    <dd>TAMIL NADU STATE BOARD</dd>
-                    <dd>PERCENTAGE : 85.5%</dd>
-                    <dd>      </dd>
-                </dl>  
-                <h2>COLLEGE</h2>
-                <dl>
-                    <dt>UG</dt>
-                    <dd>Year of completion: 2023</dd>
-                    <dd>SONA COLLEGE OF TECHNOLOGY</dd>
-                    <dd>CGPA : 9.23</dd>
-                    <dd>      </dd>
-                    </dl>  
-            </div>
-            <div class="about1">
-                
-                                
-            </div>
-    </body>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="academics-section">
+        <h1>🎓 Academic Qualifications</h1>
+        <div class="academic-item">
+          <h2>Bachelor of Engineering in Computer Science</h2>
+          <p><strong>Institution:</strong> Sona College of Technology, Salem <img src="style/images/sona_logo.png" alt="Sona Logo" class="institution-logo" /></p>
+          <p><strong>Duration:</strong> Jul 2019 – May 2023</p>
+          <p><strong>CGPA:</strong> 9.08 / 10</p>
+          <p>Graduated with strong technical proficiency in programming, databases, and full-stack development.</p>
+        </div>
+      </section>
+
+      <section class="academics-section">
+        <h1>💡 Academic Projects</h1>
+
+        <div class="academic-item">
+          <h2>Crop Yield Prediction and Recommendation System</h2>
+          <p>Machine Learning-based web app (Python Flask) using temperature, humidity, NPK levels, and soil pH to predict suitable crops.</p>
+        </div>
+
+        <div class="academic-item">
+          <h2>Nutrition Assistant Application</h2>
+          <p>Built with IBM Cloud DB2 backend and RapidAPI integration. Uses HTML/CSS/JS to display food nutritional data.</p>
+        </div>
+
+        <div class="academic-item">
+          <h2>Expenses Tracker Web Application</h2>
+          <p>Frontend in HTML/CSS/JS and MySQL backend to manage salary-based expense tracking with visualization.</p>
+        </div>
+
+        <div class="academic-item">
+          <h2>Tax Calculation System</h2>
+          <p>Java + MySQL application for calculating taxes based on custom input scenarios.</p>
+        </div>
+      </section>
+
+      
+      <section class="academics-section">
+        <h1>🌟 Organizational Involvement</h1>
+        <ul class="academic-highlights">
+          <li>Participated in Speaker’s Forum (3x)</li>
+          <li>Attended technical and non-technical quizzes at symposiums</li>
+          <li>Presented on “E-Waste Management” in Science Club</li>
+          <li>Coordinated PLUGIN – Intra-Dept Event (2nd semester)</li>
+          <li>Organized SPARKS'22 – Intra-College Event (7th semester)</li>
+          <li>Organized THREADS'23 – Inter-College Event (8th semester)</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
 </html>

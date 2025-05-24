@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style/projects.css">
-    </head>
-    <body>
-        <nav>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="style/images/logo.png" alt="">
-                </div>
-                <ul class="nav-area">
-                    <li><a href="index.html">Home</a></li>
-                    <li ><a href="academics.html">Academics</a></li>
-                    <li ><a href="skills.html">Skills</a></li>
-                    <li class="active"><a href="#">Projects</a></li>
-                    <li><a href="certification.html">Certifications</a></li>
-                    <li><a href="general.html">General info</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Experience</title>
+      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style/projects.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <nav class="sidebar">
+            <div class="profile">
+                <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
+                <h2>Shailaja Vasu</h2>
             </div>
+            <ul class="nav-list">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="projects.html" class="active">Experience</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="certification.html">Certifications</a></li>
+                <li><a href="skills.html">Additional Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-            
-            <div class="about">
-                <h2>TAX CALCULATION SYSTEMS</h2>
-                <dl>
-                    <dd>It helps the user to calculate and view the different taxes</dd>
-                    <dd>It is a JAVA application which has its backend as MySQL</dd>
-                    
-                </dl>
-                <h2>EXPENSES TRACKER APPLICATION</h2>
-                <dl>
-                    <dd>It helps the user to calculate and view the different expenses of their salary</dd>
-                    <dd>It is a web application which has its backend as MySQL and front end with html & css</dd>
-                    
-                </dl>  
-                <h2>NUTRITION ASSISTANT APPLICATION</h2>
-                <dl>
-                    <dd>It helps the user to know about the nutrition present in the entered food</dd>
-                    <dd>It is a web application hosted with python using flask library which has its backend as DB2 and using Rapid API from IBM cloud and front end with html & css </dd>
-                    
-                </dl>            
-            </div>
-    </body>
+
+    <main class="projects-container">
+
+      <header>
+        <h1>Professional Experience</h1>
+      </header>
+
+      <section class="company-block">
+        <img src="style/images/ibm-logo.png" alt="IBM Logo" class="company-logo" />
+        <h2 class="company-name">IBM India Pvt. Ltd.</h2>
+        <h3 class="account-name">PNC Financial Services</h3>
+        <p class="date">Oct 2023 – Present</p>
+
+        <article class="project">
+          <h3>Consumer Relationship Rewards – Mobile</h3>
+          <p class="date">Aug 2024 – Present</p>
+          <p>
+            Executed functional and accessibility testing on rewards features across mobile banking. Automated API testing with Postman/Karate and performance tests via JMeter. Utilized Python, Sauce Labs, JIRA, and Confluence to ensure reliable and scalable test operations in Agile sprints.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Disputes Modernization Project</h3>
+          <p class="date">May 2024 – Aug 2024</p>
+          <p>
+            Automated and functionally tested Salesforce-based dispute workflows. Developed Java/Selenium scripts for Salesforce Edge components. Managed defects and progress through JIRA in an Agile framework.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Site Readiness Project</h3>
+          <p class="date">Oct 2023 – Apr 2024</p>
+          <p>
+            Performed functional testing for web and mobile UI to validate features and user experience. Built and maintained Java/Selenium test scripts to accelerate regression cycles. Used JIRA and Confluence for test tracking and documentation in an Agile environment.
+          </p>
+        </article>
+
+               
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shailaja Vasu. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>

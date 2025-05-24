@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style/skill.css">
-    </head>
-    <body>
-        <nav>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="style/images/logo.png" alt="">
-                </div>
-                <ul class="nav-area">
-                    <li><a href="index.html">Home</a></li>
-                    <li ><a href="academics.html">Academics</a></li>
-                    <li class="active"><a href="#">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certification.html">Certifications</a></li>
-                    <li><a href="general.html">General info</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-            
-            <div class="about">
-                <h2>TECHNICAL SKILLS</h2>
-                <dl>
-                    <dd>PYTHON</dd>
-                    <dd>JAVA</dd>
-                    <dd>HTML & CSS</dd>
-                    <dd>C(Basics)</dd>
-                    <dd>DATA STRUCTURES</dd>
-                    <dd>DATABASE MANAGEMENT SYSTEMS</dd>
-                </dl> 
-                
-                <h2>NON TECHNICAL SKILLS</h2>
-                <dl>
-                    <dd>MANAGEMENT</dd>
-                    <dd>ORGANIZATION</dd>
-                    <dd>LEADERSHIP</dd>
-                    <dd>CREATIVE</dd>
-                </dl>
-            </div>
-            
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Additional Information</title>
+      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style/skill.css"/>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+  <nav class="sidebar">
+    <div class="profile">
+      <img src="style/images/logo.png" alt="Logo" class="logo">
+      <h2>Shailaja Vasu</h2>
+    </div>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Experience</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="certification.html">Certifications</a></li>
+      <li><a href="skills.html" class="active">Additional Information</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h1 class="section-title">Additional Information</h1>
+
+    <div class="info-section">
+      <div class="info-block">
+        <h3>Technical Skills</h3>
+        <ul>
+          <!-- <li><img src="style/icons/java.svg" class="skill-icon"> Java</li>
+          <li><img src="style/icons/python.svg" class="skill-icon"> Python</li>
+          <li><img src="style/icons/sql.svg" class="skill-icon"> SQL</li>
+          <li><img src="style/icons/selenium.svg" class="skill-icon"> Selenium</li>
+          <li><img src="style/icons/api.svg" class="skill-icon"> Postman</li>
+          <li><img src="style/icons/karate.svg" class="skill-icon"> Karate</li>
+          <li><img src="style/icons/jmeter.svg" class="skill-icon"> JMeter</li>
+          <li><img src="style/icons/azure.svg" class="skill-icon"> Azure (AZ-900)</li> -->
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fas fa-database"></i> SQL</li>
+          <li><i class="fas fa-vial"></i> Selenium WebDriver</li>
+          <li><i class="fas fa-paper-plane"></i> Postman, Karate</li>
+          <li><i class="fas fa-tachometer-alt"></i> JMeter</li>
+          <li><i class="fas fa-cloud"></i> Sauce Labs, Azure (AZ-900)</li>
+          <li><i class="fas fa-project-diagram"></i> Git, Agile, JIRA, Confluence</li>
+        </ul>
+      </div>
+
+      <div class="info-block">
+        <h3>Languages</h3>
+        <ul>
+          <!-- <li><img src="style/icons/english.svg" class="skill-icon"> English</li>
+          <li><img src="style/icons/tamil.svg" class="skill-icon"> Tamil</li>
+          <li><img src="style/icons/telugu.svg" class="skill-icon"> Telugu</li> -->
+          <li><i class="fas fa-language"></i> English (Fluent)</li>
+          <li><i class="fas fa-language"></i> Tamil (Native)</li>
+          <li><i class="fas fa-language"></i> Telugu (Spoken)</li>
+        </ul>
+      </div>
+
+      <div class="info-block">
+        <h3>Non-Technical Skills</h3>
+        <ul class="non-tech-list">
+          <li><i class="fas fa-users-cog"></i>Leadership</li>
+          <li><i class="fas fa-calendar-check"></i>Organization</li>
+          <li><i class="fas fa-tasks"></i>Management</li>
+          <li><i class="fas fa-lightbulb"></i>Creative Thinking</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+  <footer class="footer">
+    &copy; 2025 Shailaja Vasu. All rights reserved.
+  </footer>
+</body>
 </html>

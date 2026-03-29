@@ -1,35 +1,57 @@
-// Typing animation
-const text = "Hello, I'm Shailaja Vasu";
-let index = 0;
-const el = document.getElementById("typed-text");
+// ── Hamburger menu — works on every page ──────────────────────
+document.addEventListener("DOMContentLoaded", function () {
 
-function typeText() {
-  if (index < text.length) {
-    el.textContent += text.charAt(index);
-    index++;
-    setTimeout(typeText, 90);
+  const hamburger = document.getElementById("hamburger");
+  const sidebar   = document.getElementById("sidebar");
+  const overlay   = document.getElementById("overlay");
+
+  if (!hamburger || !sidebar || !overlay) return;
+
+  function openMenu() {
+    hamburger.classList.add("open");
+    sidebar.classList.add("open");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
   }
-}
-typeText();
 
-// Hamburger menu
-const hamburger = document.getElementById("hamburger");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
+  function closeMenu() {
+    hamburger.classList.remove("open");
+    sidebar.classList.remove("open");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
 
-function toggleMenu() {
-  hamburger.classList.toggle("open");
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("active");
-  document.body.style.overflow = sidebar.classList.contains("open") ? "hidden" : "";
-}
+  function toggleMenu() {
+    sidebar.classList.contains("open") ? closeMenu() : openMenu();
+  }
 
-hamburger?.addEventListener("click", toggleMenu);
-overlay?.addEventListener("click", toggleMenu);
+  hamburger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", closeMenu);
 
-// Close sidebar on nav link click (mobile)
-document.querySelectorAll(".nav-list a").forEach(link => {
-  link.addEventListener("click", () => {
-    if (window.innerWidth <= 768) toggleMenu();
+  // Close when a nav link is tapped on mobile
+  document.querySelectorAll(".nav-list a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (window.innerWidth <= 768) closeMenu();
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeMenu();
   });
 });
+
+// ── Typing animation (index page only) ────────────────────────
+const typedEl = document.getElementById("typed-text");
+if (typedEl) {
+  const text = "Hello, I'm Shailaja Vasu";
+  let i = 0;
+  function typeText() {
+    if (i < text.length) {
+      typedEl.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeText, 90);
+    }
+  }
+  typeText();
+}

@@ -3,56 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact</title>
-      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <title>Contact — Shailaja Vasu</title>
+  <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/shared.css" />
   <link rel="stylesheet" href="style/contact.css" />
-  </head>
+</head>
 <body>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
   <div class="container">
-    <!-- Sidebar Nav -->
-    <nav class="sidebar">
+    <nav class="sidebar" id="sidebar">
       <div class="profile">
-        <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
+        <div class="avatar-ring">
+          <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+        </div>
         <h2>Shailaja Vasu</h2>
+        <p class="role-tag">QA Automation Engineer</p>
       </div>
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Experience</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="certification.html">Certifications</a></li>
-        <li><a href="skills.html">Additional Information</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="projects.html"><span class="nav-icon">◈</span> Experience</a></li>
+        <li><a href="academics.html"><span class="nav-icon">◎</span> Academics</a></li>
+        <li><a href="certification.html"><span class="nav-icon">◉</span> Certifications</a></li>
+        <li><a href="skills.html"><span class="nav-icon">◆</span> Skills</a></li>
+        <li><a href="contact.html" class="active"><span class="nav-icon">◇</span> Contact</a></li>
       </ul>
+      <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
     </nav>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <h1>Contact Me</h1>
-      <div class="contact-cards-vertical">
-  <a href="https://wa.me/919361153681" target="_blank" class="card-vertical">
-    <img src="style/images/icons/wtsap.png" alt="WhatsApp">
-    <span>Message on WhatsApp</span>
-  </a>
+      <div class="page-header">
+        <div class="page-eyebrow">Get in Touch</div>
+        <h1>Contact Me</h1>
+      </div>
 
-  <a href="mailto:shailajavasu1607@gmail.com" class="card-vertical">
-    <img src="style/images/icons/mail.png" alt="Email">
-    <span>Send Email</span>
-  </a>
+      <div class="contact-body animate">
+        <p class="contact-intro">Feel free to reach out for opportunities, collaborations, or just a chat about QA and automation.</p>
 
-  <a href="https://github.com/shailu1607" target="_blank" class="card-vertical">
-    <img src="style/images/icons/git.png" alt="GitHub">
-    <span>Visit GitHub</span>
-  </a>
+        <div class="contact-grid">
 
-  <a href="https://www.linkedin.com/in/shailaja-vasu-15b6b91a1" target="_blank" class="card-vertical">
-    <img src="style/images/icons/linkedin.png" alt="LinkedIn">
-    <span>Connect on LinkedIn</span>
-  </a>
-</div>
+          <a href="https://wa.me/919361153681" target="_blank" class="contact-card">
+            <div class="contact-icon-wrap">
+              <img src="style/images/icons/wtsap.png" alt="WhatsApp" class="contact-icon-img" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-platform">WhatsApp</span>
+              <span class="contact-value">+91 93611 53681</span>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
 
-  <footer class="footer">
-    &copy; 2025 Shailaja Vasu. All rights reserved.
-  </footer>
+          <a href="mailto:shailajavasu1607@gmail.com" class="contact-card">
+            <div class="contact-icon-wrap">
+              <img src="style/images/icons/mail.png" alt="Email" class="contact-icon-img" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-platform">Email</span>
+              <span class="contact-value">shailajavasu1607@gmail.com</span>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
 
+          <a href="https://github.com/shailu1607" target="_blank" class="contact-card">
+            <div class="contact-icon-wrap">
+              <img src="style/images/icons/git.png" alt="GitHub" class="contact-icon-img" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-platform">GitHub</span>
+              <span class="contact-value">github.com/shailu1607</span>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/shailaja-vasu-15b6b91a1" target="_blank" class="contact-card">
+            <div class="contact-icon-wrap">
+              <img src="style/images/icons/linkedin.png" alt="LinkedIn" class="contact-icon-img" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-platform">LinkedIn</span>
+              <span class="contact-value">Connect with me</span>
+            </div>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">&copy; 2025 Shailaja Vasu · All rights reserved.</footer>
+  <script src="index.js"></script>
 </body>
 </html>

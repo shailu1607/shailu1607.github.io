@@ -1,182 +1,182 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* aca.css — Academics page */
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9ff;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Layout */
-.container {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-  width: 250px;
-  background-color: #d8bfd8;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 2px solid #91d18b;
-}
-
-.nav-list {
-  list-style: none;
-  width: 100%;
-  text-align: center;
-}
-
-.nav-list li {
-  margin: 0.5rem 0;
-}
-
-.nav-list li a {
-  display: block;
-  padding: 0.8rem;
-  text-decoration: none;
-  color: #333;
-  background-color: #f3e5f5;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.nav-list li a:hover,
-.nav-list li a.active {
-  background-color: #b8e6b5;
-  color: #000;
-}
-
-/* Main Content */
 .main-content {
   flex: 1;
-  padding: 3rem;
-  background-color: #fff;
-  animation: fadeInUp 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.aca-body {
+  padding: 2.5rem 4rem 3rem;
+  max-width: 900px;
 }
 
-/* Sections */
-.academics-section {
-  margin-bottom: 3rem;
+.aca-section {
+  margin-bottom: 2.8rem;
 }
 
-.academics-section h1 {
-  font-size: 1.8rem;
-  color: #6a0dad;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e0e0e0;
+/* Degree Card */
+.degree-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.academic-item {
-  background: #fafafa;
-  border-left: 5px solid #b8e6b5;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  margin-bottom: 1.5rem;
+.degree-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.academic-item h2 {
-  color: #444;
-  margin-bottom: 0.4rem;
+.inst-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.academic-item p {
-  color: #555;
-  line-height: 1.6;
-  margin: 0.2rem 0;
+.degree-left h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
 }
 
-.academic-highlights {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-  color: #444;
+.inst-name {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
 }
 
-.academic-highlights li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
+.inst-duration {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* Logo Inside Content */
-.institution-logo {
-  height: 18px;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
-/* Footer */
-.footer {
+.cgpa-badge {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  background-color: #e8f5e9;
-  color: #555;
-  margin-top: auto;
+  background: linear-gradient(135deg, #1c1c1e, #2a2a2c);
+  color: var(--accent);
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+  flex-shrink: 0;
+}
+
+.cgpa-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.cgpa-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(201,169,110,0.6);
+}
+
+/* Project Grid */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.proj-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border-top: 2px solid var(--accent);
+}
+
+.proj-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.proj-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.proj-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.proj-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #f5f0e8;
+  color: #7a5a1e;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(201,169,110,0.3);
+}
+
+/* Org list */
+.org-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.org-list li {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.org-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.5rem;
+  top: 5px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+  .aca-body { padding: 2rem 1.5rem 2.5rem; }
+  .proj-grid { grid-template-columns: 1fr; }
+  .degree-card { flex-direction: column; align-items: flex-start; }
+  .degree-left { flex-direction: column; align-items: flex-start; }
+}
 
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-
-  .main-content {
-    padding: 2rem 1.5rem;
-  }
-
-  .nav-list {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-  }
-
-  .nav-list li a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
+@media (max-width: 480px) {
+  .aca-body { padding: 1.5rem 1.2rem 2rem; }
 }

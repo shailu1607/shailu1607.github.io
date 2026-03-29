@@ -1,226 +1,185 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* projects.css — Experience page styles */
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f9;
-  color: #333;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Container layout */
-.container {
-  display: flex;
+.main-content {
   flex: 1;
-  min-height: 100vh;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 250px;
-  background-color: #d8bfd8;
-  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  background: var(--bg);
+}
+
+.exp-body {
+  padding: 2.5rem 4rem 3rem;
+  max-width: 860px;
+}
+
+/* Company header */
+.company-header {
+  display: flex;
   align-items: center;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.8rem 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--accent);
 }
 
-.profile {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #91d18b;
-  margin-bottom: 0.5rem;
-}
-
-.profile h2 {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.nav-list {
-  list-style: none;
-  width: 100%;
-  padding: 0;
-}
-
-.nav-list li {
-  margin: 0.5rem 0;
-}
-
-.nav-list {
-  list-style: none;
-  width: 100%;
-  text-align: center;  /* <-- This centers the text in nav items */
-}
-
-.nav-list li a {
-  display: block;
-  width: 100%;
-  padding: 0.7rem 1rem;
-  color: #333;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  background-color: #f3e5f5;
-  transition: all 0.3s ease;
-  font-weight: bold;
-}
-
-.nav-list li a:hover,
-.nav-list li a.active {
-  background-color: #b8e6b5;
-  color: #000;
-}
-
-/* Main content */
-.projects-container {
-  flex: 1;
-  padding: 2rem;
-  background-color: #fff;
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* Header */
-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  color: #6a0dad;
-}
-
-/* Company and project blocks */
-.company-block {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+.company-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .company-name {
-  font-size: 1.8rem;
-  color: #6a0dad;
-  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
 }
 
-.account-name {
-  font-size: 1.3rem;
-  color: #6a0dad;
-  margin-bottom: 0.5rem;
+.company-client {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
 }
 
-.company-block > .date {
-  font-size: 0.95rem;
-  color: #777;
-  margin-bottom: 1.5rem;
+/* Date badge */
+.date-badge {
+  display: inline-block;
+  background: var(--accent-light);
+  color: #7a5a1e;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
 }
 
-.project {
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+.timeline-item {
+  position: relative;
   margin-bottom: 2rem;
 }
 
-.project h3 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-bottom: 0.4rem;
+.timeline-dot {
+  position: absolute;
+  left: -25px;
+  top: 1.8rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
 }
 
-.project .date {
-  font-style: italic;
+.timeline-content.card {
+  border-left: 3px solid var(--accent);
+  margin-bottom: 0;
+}
+
+/* Project meta */
+.proj-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.proj-meta h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.proj-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* Achievement list */
+.achievement-list {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.achievement-list li {
   font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 0.6rem;
-}
-
-.project p {
-  font-size: 1rem;
-  color: #444;
+  color: var(--text-secondary);
+  padding-left: 1.2rem;
+  position: relative;
   line-height: 1.6;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f0f0f0;
-  color: #555;
-  font-size: 0.9rem;
+.achievement-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.8rem;
+  top: 1px;
 }
 
-/* Animation */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.achievement-list li strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Tag row */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: #f5f0e8;
+  color: #7a5a1e;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(201,169,110,0.3);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .nav-list li a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .projects-container {
-    padding: 1.5rem 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .company-name {
-    font-size: 1.5rem;
-  }
-
-  .project h3 {
-    font-size: 1.1rem;
-  }
-}
-.company-name {
-  display: flex;
-  align-items: center;
-  gap: 12px; /* space between logos and text */
-  font-size: 1.8rem;
-  color: #6a0dad;
-  margin-bottom: 0.5rem;
+  .exp-body { padding: 2rem 1.5rem 2.5rem; }
+  .company-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .proj-meta { flex-direction: column; gap: 0.5rem; }
 }
 
-.company-logo {
-  height: 36px;
-  width: auto;
-  object-fit: contain;
-  vertical-align: middle;
+@media (max-width: 480px) {
+  .exp-body { padding: 1.5rem 1.2rem 2rem; }
+  .timeline { padding-left: 20px; }
 }

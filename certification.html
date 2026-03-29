@@ -3,64 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Certifications</title>
-      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <title>Certifications — Shailaja Vasu</title>
+  <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/shared.css" />
   <link rel="stylesheet" href="style/cert.css" />
 </head>
 <body>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
   <div class="container">
-    <nav class="sidebar">
+    <nav class="sidebar" id="sidebar">
       <div class="profile">
-        <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
+        <div class="avatar-ring">
+          <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+        </div>
         <h2>Shailaja Vasu</h2>
+        <p class="role-tag">QA Automation Engineer</p>
       </div>
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Experience</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="certification.html" class="active">Certifications</a></li>
-        <li><a href="skills.html">Additional Information</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="projects.html"><span class="nav-icon">◈</span> Experience</a></li>
+        <li><a href="academics.html"><span class="nav-icon">◎</span> Academics</a></li>
+        <li><a href="certification.html" class="active"><span class="nav-icon">◉</span> Certifications</a></li>
+        <li><a href="skills.html"><span class="nav-icon">◆</span> Skills</a></li>
+        <li><a href="contact.html"><span class="nav-icon">◇</span> Contact</a></li>
       </ul>
+      <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
     </nav>
 
     <main class="main-content">
-      <section class="cert-section">
+      <div class="page-header">
+        <div class="page-eyebrow">Credentials</div>
         <h1>Certifications</h1>
-        <div class="cert-list">
-          <div class="cert-item">
-            <img src="style/images/istqb_logo.png" alt="ISTQB Logo" class="cert-logo" />
-            <h2>ISTQB Certified Tester – Foundation Level</h2>
-          </div>
+      </div>
 
-          <div class="cert-item">
-            <img src="style/images/azure_logo.png" alt="Azure Logo" class="cert-logo" />
-            <h2>Microsoft Certified: Azure Fundamentals (AZ-900)</h2>
-          </div>
+      <div class="cert-body animate">
 
-          <div class="cert-item">
-            <img src="style/images/nptel_logo.png" alt="NPTEL Logo" class="cert-logo" />
-            <h2>NPTEL – Software Testing (Elite Certification)</h2>
-          </div>
-        </div>
-      </section>
+        <!-- Professional Certs -->
+        <section class="cert-section">
+          <div class="section-label">Professional Certifications</div>
+          <div class="cert-grid">
 
-      <section class="participation-section">
-        <h1>Academic Certificates</h1>
-        <ul class="highlight-list">
-          <li><strong>IBM:</strong> Python for Data Science, Data Privacy Fundamentals, Intro to Data Science, Full Stack Tester</li>
-          <li><strong>NPTEL:</strong> Software Testing (ELITE)</li>
-          <li><strong>IBM SmartBridge:</strong> Full Stack Development</li>
-          <li><strong>GUVI:</strong> AI for India Event</li>
-          <li><strong>CISCO:</strong> Introduction to Networking</li>
-          <li><strong>Fast Track:</strong> Android Studio Basics</li>
-        </ul>
-      </section>
+            <div class="cert-card featured">
+              <img src="style/images/istqb_logo.png" alt="ISTQB" class="cert-logo" />
+              <div class="cert-info">
+                <h3>ISTQB Certified Tester</h3>
+                <p>Foundation Level</p>
+                <span class="cert-badge">Testing</span>
+              </div>
+            </div>
+
+            <div class="cert-card featured">
+              <img src="style/images/azure_logo.png" alt="Azure" class="cert-logo" />
+              <div class="cert-info">
+                <h3>Microsoft Certified</h3>
+                <p>Azure Fundamentals (AZ-900)</p>
+                <span class="cert-badge">Cloud</span>
+              </div>
+            </div>
+
+            <div class="cert-card featured">
+              <img src="style/images/nptel_logo.png" alt="NPTEL" class="cert-logo" />
+              <div class="cert-info">
+                <h3>NPTEL — Software Testing</h3>
+                <p>Elite Certification</p>
+                <span class="cert-badge">Academic</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Academic Certificates -->
+        <section class="cert-section">
+          <div class="section-label">Academic Certificates</div>
+          <div class="ac-list">
+            <div class="ac-item">
+              <span class="ac-provider">IBM</span>
+              <span class="ac-title">Python for Data Science · Data Privacy Fundamentals · Intro to Data Science · Full Stack Tester</span>
+            </div>
+            <div class="ac-item">
+              <span class="ac-provider">NPTEL</span>
+              <span class="ac-title">Software Testing (Elite)</span>
+            </div>
+            <div class="ac-item">
+              <span class="ac-provider">IBM SmartBridge</span>
+              <span class="ac-title">Full Stack Development</span>
+            </div>
+            <div class="ac-item">
+              <span class="ac-provider">GUVI</span>
+              <span class="ac-title">AI for India Event</span>
+            </div>
+            <div class="ac-item">
+              <span class="ac-provider">CISCO</span>
+              <span class="ac-title">Introduction to Networking</span>
+            </div>
+            <div class="ac-item">
+              <span class="ac-provider">Fast Track</span>
+              <span class="ac-title">Android Studio Basics</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </main>
   </div>
 
-  <footer class="footer">
-    &copy; 2025 Shailaja Vasu. All rights reserved.
-  </footer>
+  <footer class="footer">&copy; 2025 Shailaja Vasu · All rights reserved.</footer>
+  <script src="index.js"></script>
 </body>
 </html>

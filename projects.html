@@ -3,74 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Professional Experience</title>
-      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <title>Experience — Shailaja Vasu</title>
+  <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/shared.css" />
   <link rel="stylesheet" href="style/projects.css" />
 </head>
 <body>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
 
   <div class="container">
+    <nav class="sidebar" id="sidebar">
+      <div class="profile">
+        <div class="avatar-ring">
+          <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+        </div>
+        <h2>Shailaja Vasu</h2>
+        <p class="role-tag">QA Automation Engineer</p>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="projects.html" class="active"><span class="nav-icon">◈</span> Experience</a></li>
+        <li><a href="academics.html"><span class="nav-icon">◎</span> Academics</a></li>
+        <li><a href="certification.html"><span class="nav-icon">◉</span> Certifications</a></li>
+        <li><a href="skills.html"><span class="nav-icon">◆</span> Skills</a></li>
+        <li><a href="contact.html"><span class="nav-icon">◇</span> Contact</a></li>
+      </ul>
+      <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
+    </nav>
 
-    <nav class="sidebar">
-            <div class="profile">
-                <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
-                <h2>Shailaja Vasu</h2>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="projects.html" class="active">Experience</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="certification.html">Certifications</a></li>
-                <li><a href="skills.html">Additional Information</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    <main class="projects-container">
-
-      <header>
+    <main class="main-content">
+      <div class="page-header">
+        <div class="page-eyebrow">Career</div>
         <h1>Professional Experience</h1>
-      </header>
+      </div>
 
-      <section class="company-block">
-        <img src="style/images/ibm-logo.png" alt="IBM Logo" class="company-logo" />
-        <h2 class="company-name">IBM India Pvt. Ltd.</h2>
-        <h3 class="account-name">PNC Financial Services</h3>
-        <p class="date">Oct 2023 – Present</p>
+      <div class="exp-body animate">
+        <!-- Timeline -->
+        <div class="company-header">
+          <img src="style/images/ibm-logo.png" alt="IBM Logo" class="company-logo" />
+          <div>
+            <h2 class="company-name">IBM India Pvt. Ltd.</h2>
+            <p class="company-client">Client: PNC Financial Services</p>
+            <span class="date-badge">Oct 2023 – Present</span>
+          </div>
+        </div>
 
-        <article class="project">
-          <h3>Consumer Relationship Rewards – Mobile</h3>
-          <p class="date">Aug 2024 – Present</p>
-          <p>
-            Executed functional and accessibility testing on rewards features across mobile banking. Automated API testing with Postman/Karate and performance tests via JMeter. Utilized Python, Sauce Labs, JIRA, and Confluence to ensure reliable and scalable test operations in Agile sprints.
-          </p>
-        </article>
+        <div class="timeline">
 
-        <article class="project">
-          <h3>Disputes Modernization Project</h3>
-          <p class="date">May 2024 – Aug 2024</p>
-          <p>
-            Automated and functionally tested Salesforce-based dispute workflows. Developed Java/Selenium scripts for Salesforce Edge components. Managed defects and progress through JIRA in an Agile framework.
-          </p>
-        </article>
+          <!-- Project 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="proj-meta">
+                <h3>Consumer Relationship Rewards — Mobile</h3>
+                <span class="date-badge">Aug 2024 – Present</span>
+              </div>
+              <p class="proj-desc">
+                Executed functional and accessibility testing on rewards features across mobile banking. Automated API testing with Postman/Karate DSL and developed end-to-end test scenarios using Python's FLA Framework. Utilized Sauce Labs and SeeTest for cross-device coverage within Agile sprints.
+              </p>
+              <ul class="achievement-list">
+                <li>Reduced manual validation effort by <strong>50%</strong> by automating key user workflows</li>
+                <li>Conducted mobile UI &amp; accessibility testing for accounts, loans, and rewards modules</li>
+                <li>Automated API validation using Postman and Karate DSL for faster backend service checks</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Karate DSL</span>
+                <span class="tag">Sauce Labs</span>
+                <span class="tag">SeeTest</span>
+                <span class="tag">JIRA</span>
+              </div>
+            </div>
+          </div>
 
-        <article class="project">
-          <h3>Site Readiness Project</h3>
-          <p class="date">Oct 2023 – Apr 2024</p>
-          <p>
-            Performed functional testing for web and mobile UI to validate features and user experience. Built and maintained Java/Selenium test scripts to accelerate regression cycles. Used JIRA and Confluence for test tracking and documentation in an Agile environment.
-          </p>
-        </article>
+          <!-- Project 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="proj-meta">
+                <h3>Disputes Modernization Project</h3>
+                <span class="date-badge">May 2024 – Aug 2024</span>
+              </div>
+              <p class="proj-desc">
+                Automated and functionally tested Salesforce-based dispute workflows. Developed Java/Selenium WebDriver scripts for Salesforce Edge components, performing functional, integration, and regression testing.
+              </p>
+              <ul class="achievement-list">
+                <li>Developed automation scripts for Salesforce-based workflows using Java &amp; Selenium WebDriver</li>
+                <li>Performed functional, integration, and regression testing to ensure stability</li>
+                <li>Managed defects and test cases in JIRA with documentation in Confluence</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Selenium WebDriver</span>
+                <span class="tag">Salesforce</span>
+                <span class="tag">JIRA</span>
+                <span class="tag">Confluence</span>
+              </div>
+            </div>
+          </div>
 
-               
-      </section>
+          <!-- Project 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="proj-meta">
+                <h3>Site Readiness Project</h3>
+                <span class="date-badge">Oct 2023 – Apr 2024</span>
+              </div>
+              <p class="proj-desc">
+                Performed manual and automated testing for web and mobile applications to validate features before production release. Built and maintained Java/Selenium test scripts to accelerate regression cycles.
+              </p>
+              <ul class="achievement-list">
+                <li>Designed and executed <strong>100+</strong> functional test cases achieving <strong>98%</strong> acceptance criteria coverage</li>
+                <li>Executed cross-platform testing across multiple devices and browsers</li>
+                <li>Used JIRA and Confluence for test tracking and documentation</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">TestNG</span>
+                <span class="tag">Sauce Labs</span>
+                <span class="tag">SeeTest</span>
+                <span class="tag">Agile</span>
+              </div>
+            </div>
+          </div>
 
+        </div><!-- /timeline -->
+      </div>
     </main>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Shailaja Vasu. All rights reserved.</p>
-  </footer>
-
+  <footer class="footer">&copy; 2025 Shailaja Vasu · All rights reserved.</footer>
+  <script src="index.js"></script>
 </body>
 </html>

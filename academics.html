@@ -3,82 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Academic Profile</title>
-      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+  <title>Academics — Shailaja Vasu</title>
+  <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/shared.css" />
   <link rel="stylesheet" href="style/aca.css" />
 </head>
 <body>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
   <div class="container">
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-            <div class="profile">
-                <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
-                <h2>Shailaja Vasu</h2>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="academics.html" class="active">Academics</a></li>
-                <li><a href="certification.html">Certifications</a></li>
-                <li><a href="skills.html">Additional Information</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="sidebar" id="sidebar">
+      <div class="profile">
+        <div class="avatar-ring">
+          <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+        </div>
+        <h2>Shailaja Vasu</h2>
+        <p class="role-tag">QA Automation Engineer</p>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="projects.html"><span class="nav-icon">◈</span> Experience</a></li>
+        <li><a href="academics.html" class="active"><span class="nav-icon">◎</span> Academics</a></li>
+        <li><a href="certification.html"><span class="nav-icon">◉</span> Certifications</a></li>
+        <li><a href="skills.html"><span class="nav-icon">◆</span> Skills</a></li>
+        <li><a href="contact.html"><span class="nav-icon">◇</span> Contact</a></li>
+      </ul>
+      <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
+    </nav>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <section class="academics-section">
-        <h1>🎓 Academic Qualifications</h1>
-        <div class="academic-item">
-          <h2>Bachelor of Engineering in Computer Science</h2>
-          <p><strong>Institution:</strong> Sona College of Technology, Salem <img src="style/images/sona_logo.png" alt="Sona Logo" class="institution-logo" /></p>
-          <p><strong>Duration:</strong> Jul 2019 – May 2023</p>
-          <p><strong>CGPA:</strong> 9.08 / 10</p>
-          <p>Graduated with strong technical proficiency in programming, databases, and full-stack development.</p>
-        </div>
-      </section>
+      <div class="page-header">
+        <div class="page-eyebrow">Education</div>
+        <h1>Academic Qualifications</h1>
+      </div>
 
-      <section class="academics-section">
-        <h1>💡 Academic Projects</h1>
+      <div class="aca-body animate">
 
-        <div class="academic-item">
-          <h2>Crop Yield Prediction and Recommendation System</h2>
-          <p>Machine Learning-based web app (Python Flask) using temperature, humidity, NPK levels, and soil pH to predict suitable crops.</p>
-        </div>
+        <!-- Degree -->
+        <section class="aca-section">
+          <div class="section-label">Degree</div>
+          <div class="card degree-card">
+            <div class="degree-left">
+              <img src="style/images/sona_logo.png" alt="Sona College" class="inst-logo" />
+              <div>
+                <h2>Bachelor of Engineering — Computer Science</h2>
+                <p class="inst-name">Sona College of Technology, Salem</p>
+                <p class="inst-duration">Jul 2019 – May 2023</p>
+              </div>
+            </div>
+            <div class="cgpa-badge">
+              <span class="cgpa-num">9.08</span>
+              <span class="cgpa-label">CGPA / 10</span>
+            </div>
+          </div>
+        </section>
 
-        <div class="academic-item">
-          <h2>Nutrition Assistant Application</h2>
-          <p>Built with IBM Cloud DB2 backend and RapidAPI integration. Uses HTML/CSS/JS to display food nutritional data.</p>
-        </div>
+        <!-- Academic Projects -->
+        <section class="aca-section">
+          <div class="section-label">Academic Projects</div>
+          <div class="proj-grid">
 
-        <div class="academic-item">
-          <h2>Expenses Tracker Web Application</h2>
-          <p>Frontend in HTML/CSS/JS and MySQL backend to manage salary-based expense tracking with visualization.</p>
-        </div>
+            <div class="proj-card">
+              <div class="proj-icon">🌾</div>
+              <h3>Crop Yield Prediction</h3>
+              <p>ML-based web app (Python Flask) using temperature, humidity, NPK levels, and soil pH to predict suitable crops.</p>
+              <div class="tag-row">
+                <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">ML</span>
+              </div>
+            </div>
 
-        <div class="academic-item">
-          <h2>Tax Calculation System</h2>
-          <p>Java + MySQL application for calculating taxes based on custom input scenarios.</p>
-        </div>
-      </section>
+            <div class="proj-card">
+              <div class="proj-icon">🥗</div>
+              <h3>Nutrition Assistant App</h3>
+              <p>Built with IBM Cloud DB2 backend and RapidAPI integration. Displays food nutritional data via HTML/CSS/JS.</p>
+              <div class="tag-row">
+                <span class="tag">HTML/CSS/JS</span><span class="tag">IBM DB2</span><span class="tag">RapidAPI</span>
+              </div>
+            </div>
 
-      
-      <section class="academics-section">
-        <h1>🌟 Organizational Involvement</h1>
-        <ul class="academic-highlights">
-          <li>Participated in Speaker’s Forum (3x)</li>
-          <li>Attended technical and non-technical quizzes at symposiums</li>
-          <li>Presented on “E-Waste Management” in Science Club</li>
-          <li>Coordinated PLUGIN – Intra-Dept Event (2nd semester)</li>
-          <li>Organized SPARKS'22 – Intra-College Event (7th semester)</li>
-          <li>Organized THREADS'23 – Inter-College Event (8th semester)</li>
-        </ul>
-      </section>
+            <div class="proj-card">
+              <div class="proj-icon">💳</div>
+              <h3>Expenses Tracker</h3>
+              <p>Frontend in HTML/CSS/JS and MySQL backend for salary-based expense tracking with data visualization.</p>
+              <div class="tag-row">
+                <span class="tag">JavaScript</span><span class="tag">MySQL</span>
+              </div>
+            </div>
+
+            <div class="proj-card">
+              <div class="proj-icon">🧾</div>
+              <h3>Tax Calculation System</h3>
+              <p>Java + MySQL application for calculating taxes based on custom income and deduction input scenarios.</p>
+              <div class="tag-row">
+                <span class="tag">Java</span><span class="tag">MySQL</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Organizational -->
+        <section class="aca-section">
+          <div class="section-label">Organizational Involvement</div>
+          <div class="card">
+            <ul class="org-list">
+              <li>Participated in Speaker's Forum (3×)</li>
+              <li>Attended technical and non-technical quizzes at symposiums</li>
+              <li>Presented on "E-Waste Management" in Science Club</li>
+              <li>Coordinated PLUGIN – Intra-Dept Event (2nd semester)</li>
+              <li>Organized SPARKS'22 – Intra-College Event (7th semester)</li>
+              <li>Organized THREADS'23 – Inter-College Event (8th semester)</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
     </main>
   </div>
 
-  <footer class="footer">
-    &copy; 2025 Your Name. All rights reserved.
-  </footer>
+  <footer class="footer">&copy; 2025 Shailaja Vasu · All rights reserved.</footer>
+  <script src="index.js"></script>
 </body>
 </html>

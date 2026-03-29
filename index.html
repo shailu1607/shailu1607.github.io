@@ -3,47 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shailaja Vasu Portfolio</title>
-    <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
+    <title>Shailaja Vasu — QA Automation Engineer</title>
+    <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Mobile Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="overlay" id="overlay"></div>
+
     <div class="container">
-      <nav class="sidebar">
+      <nav class="sidebar" id="sidebar">
         <div class="profile">
-          <img src="style/images/logo.png" alt="Shailaja Vasu Logo" class="logo" />
+          <div class="avatar-ring">
+            <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+          </div>
           <h2>Shailaja Vasu</h2>
+          <p class="role-tag">QA Automation Engineer</p>
         </div>
         <ul class="nav-list">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="projects.html">Experience</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="certification.html">Certifications</a></li>
-          <li><a href="skills.html">Additional Information</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="active"><span class="nav-icon">⌂</span> Home</a></li>
+          <li><a href="projects.html"><span class="nav-icon">◈</span> Experience</a></li>
+          <li><a href="academics.html"><span class="nav-icon">◎</span> Academics</a></li>
+          <li><a href="certification.html"><span class="nav-icon">◉</span> Certifications</a></li>
+          <li><a href="skills.html"><span class="nav-icon">◆</span> Skills</a></li>
+          <li><a href="contact.html"><span class="nav-icon">◇</span> Contact</a></li>
         </ul>
+        <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
       </nav>
 
-      <!-- Typing intro outside main-content box -->
-      <div class="intro-heading-wrapper">
-         <img src="style/images/hello-img.png" alt="Professional woman waving" class="hi-gif" />
-        <h1 class="intro-heading">
-          <span id="typed-text"></span><span class="cursor">|</span>
-        </h1>
-      </div>
+      <main class="main-area">
+        <div class="hero-block">
+          <div class="hero-eyebrow">Welcome</div>
+          <h1 class="hero-title">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h1>
+          <p class="hero-subtitle">Automation Test Engineer · IBM India Pvt. Ltd.</p>
+          <div class="hero-chips">
+            <span class="chip">Selenium</span>
+            <span class="chip">Python</span>
+            <span class="chip">Karate DSL</span>
+            <span class="chip">Java</span>
+            <span class="chip">Agile</span>
+          </div>
+        </div>
 
-      <main class="main-content">
-        <section class="intro">
-          <h2>Professional Summary</h2>
-          <p>
-            Skilled Test Automation Engineer with hands-on experience designing and implementing automated testing solutions across diverse development environments. Proficient in test tools, scripting, and methodologies focused on efficiency and reliability. Self-driven professional committed to delivering high-quality software while staying updated on industry best practices.
-          </p>
-        </section>
+        <div class="main-content" id="mainContent">
+          <section class="intro">
+            <div class="section-label">Professional Summary</div>
+            <h2>Building Quality at Scale</h2>
+            <p>
+              Automation Test Engineer with hands-on experience designing and implementing
+              automated testing solutions across web and mobile environments. Proficient in
+              Java, Selenium WebDriver, Python, and API testing with Postman and Karate DSL.
+              Passionate about delivering high-quality software through reliable testing strategies
+              and close collaboration within Agile teams.
+            </p>
+            <div class="stats-row">
+              <div class="stat">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">50%</span>
+                <span class="stat-label">Manual Effort Reduced</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">100+</span>
+                <span class="stat-label">Test Cases Designed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">98%</span>
+                <span class="stat-label">Acceptance Coverage</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 
     <footer class="footer">
-      <p>&copy; 2025 Shailaja Vasu. All rights reserved.</p>
+      <p>&copy; 2025 Shailaja Vasu · All rights reserved.</p>
     </footer>
 
     <script src="index.js"></script>

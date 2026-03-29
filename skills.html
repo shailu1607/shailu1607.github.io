@@ -3,88 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Additional Information</title>
-      <link rel="icon" href="style//images/icons/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="style/skill.css"/>
-
-  <!-- Font Awesome CDN -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <title>Skills — Shailaja Vasu</title>
+  <link rel="icon" href="style/images/icons/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/shared.css" />
+  <link rel="stylesheet" href="style/skill.css" />
 </head>
 <body>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
   <div class="container">
-  <nav class="sidebar">
-    <div class="profile">
-      <img src="style/images/logo.png" alt="Logo" class="logo">
-      <h2>Shailaja Vasu</h2>
-    </div>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Experience</a></li>
-      <li><a href="academics.html">Academics</a></li>
-      <li><a href="certification.html">Certifications</a></li>
-      <li><a href="skills.html" class="active">Additional Information</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="sidebar" id="sidebar">
+      <div class="profile">
+        <div class="avatar-ring">
+          <img src="style/images/logo.png" alt="Shailaja Vasu" class="logo" />
+        </div>
+        <h2>Shailaja Vasu</h2>
+        <p class="role-tag">QA Automation Engineer</p>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html"><span class="nav-icon">⌂</span> Home</a></li>
+        <li><a href="projects.html"><span class="nav-icon">◈</span> Experience</a></li>
+        <li><a href="academics.html"><span class="nav-icon">◎</span> Academics</a></li>
+        <li><a href="certification.html"><span class="nav-icon">◉</span> Certifications</a></li>
+        <li><a href="skills.html" class="active"><span class="nav-icon">◆</span> Skills</a></li>
+        <li><a href="contact.html"><span class="nav-icon">◇</span> Contact</a></li>
+      </ul>
+      <div class="sidebar-footer">Chennai, Tamil Nadu 🇮🇳</div>
+    </nav>
 
-  <main class="main-content">
-    <h1 class="section-title">Additional Information</h1>
-
-    <div class="info-section">
-      <div class="info-block">
-        <h3>Technical Skills</h3>
-        <ul>
-          <!-- <li><img src="style/icons/java.svg" class="skill-icon"> Java</li>
-          <li><img src="style/icons/python.svg" class="skill-icon"> Python</li>
-          <li><img src="style/icons/sql.svg" class="skill-icon"> SQL</li>
-          <li><img src="style/icons/selenium.svg" class="skill-icon"> Selenium</li>
-          <li><img src="style/icons/api.svg" class="skill-icon"> Postman</li>
-          <li><img src="style/icons/karate.svg" class="skill-icon"> Karate</li>
-          <li><img src="style/icons/jmeter.svg" class="skill-icon"> JMeter</li>
-          <li><img src="style/icons/azure.svg" class="skill-icon"> Azure (AZ-900)</li> -->
-          <li><i class="fab fa-java"></i> Java</li>
-          <li><i class="fab fa-python"></i> Python</li>
-          <li><i class="fas fa-database"></i> SQL</li>
-          <li><i class="fas fa-vial"></i> Selenium WebDriver</li>
-          <li><i class="fas fa-paper-plane"></i> Postman, Karate</li>
-          <li><i class="fas fa-tachometer-alt"></i> JMeter</li>
-          <li><i class="fas fa-cloud"></i> Sauce Labs, Azure (AZ-900)</li>
-          <li><i class="fas fa-project-diagram"></i> Git, Agile, JIRA, Confluence</li>
-        </ul>
+    <main class="main-content">
+      <div class="page-header">
+        <div class="page-eyebrow">Capabilities</div>
+        <h1>Skills &amp; Information</h1>
       </div>
 
-      <div class="info-block">
-        <h3>Languages</h3>
-        <ul>
-          <!-- <li><img src="style/icons/english.svg" class="skill-icon"> English</li>
-          <li><img src="style/icons/tamil.svg" class="skill-icon"> Tamil</li>
-          <li><img src="style/icons/telugu.svg" class="skill-icon"> Telugu</li> -->
-          <li><i class="fas fa-language"></i> English (Fluent)</li>
-          <li><i class="fas fa-language"></i> Tamil (Native)</li>
-          <li><i class="fas fa-language"></i> Telugu (Spoken)</li>
-        </ul>
-      </div>
+      <div class="skills-body animate">
 
-      <div class="info-block">
-        <h3>Non-Technical Skills</h3>
-        <ul class="non-tech-list">
-          <li><i class="fas fa-users-cog"></i>Leadership</li>
-          <li><i class="fas fa-calendar-check"></i>Organization</li>
-          <li><i class="fas fa-tasks"></i>Management</li>
-          <li><i class="fas fa-lightbulb"></i>Creative Thinking</li>
-        </ul>
+        <!-- Technical Skills -->
+        <section class="skill-section">
+          <div class="section-label">Technical Skills</div>
+          <div class="skill-groups">
+
+            <div class="skill-group">
+              <h3>Languages &amp; Scripting</h3>
+              <div class="pill-row">
+                <span class="pill">☕ Java</span>
+                <span class="pill">🐍 Python</span>
+                <span class="pill">🗄️ SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Automation Frameworks</h3>
+              <div class="pill-row">
+                <span class="pill">Selenium WebDriver</span>
+                <span class="pill">TestNG</span>
+                <span class="pill">Karate DSL</span>
+                <span class="pill">FLA Framework</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>API &amp; Performance Testing</h3>
+              <div class="pill-row">
+                <span class="pill">Postman</span>
+                <span class="pill">Karate</span>
+                <span class="pill">JMeter</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Platforms &amp; Tools</h3>
+              <div class="pill-row">
+                <span class="pill">Sauce Labs</span>
+                <span class="pill">SeeTest</span>
+                <span class="pill">Salesforce</span>
+                <span class="pill">Azure (AZ-900)</span>
+                <span class="pill">Git</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Testing Types</h3>
+              <div class="pill-row">
+                <span class="pill">Regression</span>
+                <span class="pill">Integration</span>
+                <span class="pill">Accessibility</span>
+                <span class="pill">Functional</span>
+                <span class="pill">Mobile UI</span>
+                <span class="pill">API Testing</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Project Management</h3>
+              <div class="pill-row">
+                <span class="pill">Agile (Scrum)</span>
+                <span class="pill">Waterfall</span>
+                <span class="pill">JIRA</span>
+                <span class="pill">Confluence</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="skill-section">
+          <div class="section-label">Languages Spoken</div>
+          <div class="lang-grid">
+            <div class="lang-card">
+              <span class="lang-flag">🇬🇧</span>
+              <span class="lang-name">English</span>
+              <span class="lang-level">Fluent</span>
+            </div>
+            <div class="lang-card">
+              <span class="lang-flag">🇮🇳</span>
+              <span class="lang-name">Tamil</span>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-card">
+              <span class="lang-flag">🇮🇳</span>
+              <span class="lang-name">Telugu</span>
+              <span class="lang-level">Spoken</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Soft Skills -->
+        <section class="skill-section">
+          <div class="section-label">Non-Technical Skills</div>
+          <div class="soft-grid">
+            <div class="soft-card">
+              <div class="soft-icon">🎯</div>
+              <span>Leadership</span>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon">📋</div>
+              <span>Organization</span>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon">⚙️</div>
+              <span>Management</span>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon">💡</div>
+              <span>Creative Thinking</span>
+            </div>
+          </div>
+        </section>
+
       </div>
-    </div>
-  </main>
-</div>
-  <footer class="footer">
-    &copy; 2025 Shailaja Vasu. All rights reserved.
-  </footer>
+    </main>
+  </div>
+
+  <footer class="footer">&copy; 2025 Shailaja Vasu · All rights reserved.</footer>
+  <script src="index.js"></script>
 </body>
 </html>

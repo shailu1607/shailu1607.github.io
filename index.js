@@ -1,31 +1,35 @@
-const h1Wrapper = document.querySelector(".intro-heading-wrapper");
-// const h1Wrapper = document.querySelector(".intro-heading-wrapper");
-const h2 = document.querySelector(".intro h2");
-const p = document.querySelector(".intro p");
-const mainContent = document.querySelector(".main-content"); // add this line
-
+// Typing animation
 const text = "Hello, I'm Shailaja Vasu";
 let index = 0;
+const el = document.getElementById("typed-text");
 
 function typeText() {
   if (index < text.length) {
-    document.getElementById("typed-text").textContent += text.charAt(index);
+    el.textContent += text.charAt(index);
     index++;
-    setTimeout(typeText, 150);
+    setTimeout(typeText, 90);
   }
 }
-
 typeText();
 
-// After 15 seconds: hide intro (h1 & gif), show h2, p, AND show entire main content
-setTimeout(() => {
-  h1Wrapper.style.display = 'none';
-  h2.style.display = 'block';
-  p.style.display = 'block';
-  mainContent.style.display = 'block';  // show main content here
-  
+// Hamburger menu
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-  // Optional: trigger animation styles manually
-  mainContent.style.opacity = '1';
-  mainContent.style.transform = 'translateY(0)';
-}, 5000);
+function toggleMenu() {
+  hamburger.classList.toggle("open");
+  sidebar.classList.toggle("open");
+  overlay.classList.toggle("active");
+  document.body.style.overflow = sidebar.classList.contains("open") ? "hidden" : "";
+}
+
+hamburger?.addEventListener("click", toggleMenu);
+overlay?.addEventListener("click", toggleMenu);
+
+// Close sidebar on nav link click (mobile)
+document.querySelectorAll(".nav-list a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) toggleMenu();
+  });
+});
